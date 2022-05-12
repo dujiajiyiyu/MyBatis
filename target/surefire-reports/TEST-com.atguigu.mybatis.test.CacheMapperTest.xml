@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="2" failures="0" name="com.atguigu.mybatis.test.CacheMapperTest" time="1.468" errors="2" skipped="0">
+  <properties>
+    <property name="idea.version" value="2021.3.3"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="D:\Eclipse-workspace\jre\bin"/>
+    <property name="java.vm.version" value="25.131-b11"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="maven.multiModuleProjectDirectory" value="D:\IDEA Java Coding\MyBatis\MyBatis_demo3"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=";"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="CN"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="D:\IDEA Java Coding\MyBatis\MyBatis_demo3"/>
+    <property name="java.runtime.version" value="1.8.0_131-b11"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="D:\Eclipse-workspace\jre\lib\endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Users\齐欣\AppData\Local\Temp\"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="maven.ext.class.path" value="D:\IntelliJ IDEA 2021.3.3\plugins\maven\lib\maven-event-listener.jar"/>
+    <property name="classworlds.conf" value="D:\IntelliJ IDEA 2021.3.3\plugins\maven\lib\maven3\bin\m2.conf"/>
+    <property name="sun.jnu.encoding" value="GBK"/>
+    <property name="java.library.path" value="D:\Eclipse-workspace\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\ProgramData\Oracle\Java\javapath;D:\MySQL Server 8.0\Program Files\MySQL\MySQL Server 8.0\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.2\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.2\libnvvp;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\libnvvp;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.2\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.2\libnvvp;D:\Python\Scripts\;D:\Anaconda\Scripts;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Common Files\Autodesk Shared\;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\NVIDIA Corporation\Nsight Compute 2019.5.0\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;D:\TomCat8\apache-tomcat-8.0.42-windows-x64\bin;D:\TomCat8\apache-tomcat-8.0.42-windows-x64\lib;C:\Users\齐欣\AppData\Local\Microsoft\WindowsApps;C:\Users\齐欣\AppData\Local\GitHubDesktop\bin;C:\Users\齐欣\.dotnet\tools;D:\PyCharm-Python运行工具\PyCharm Community Edition 2021.1.1\bin;;C:\Users\齐欣\AppData\Local\Microsoft\WindowsApps;D:\Eclipse-workspace\jre-8u131;\bin;&quot;;D:\Eclipse-workspace\jre-8u131;\jre\bin&quot;;&quot;;D:\TomCat8\apache-tomcat-8.0.42-windows-x64\bin&quot;;;."/>
+    <property name="maven.conf" value="D:\IntelliJ IDEA 2021.3.3\plugins\maven\lib\maven3/conf"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.0"/>
+    <property name="user.home" value="C:\Users\齐欣"/>
+    <property name="user.timezone" value="GMT+08:00"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="user.name" value="齐欣"/>
+    <property name="java.class.path" value="D:\IntelliJ IDEA 2021.3.3\plugins\maven\lib\maven3\boot\plexus-classworlds-2.6.0.jar;D:\IntelliJ IDEA 2021.3.3\plugins\maven\lib\maven3\boot\plexus-classworlds.license;D:\IntelliJ IDEA 2021.3.3\lib\idea_rt.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="D:\Eclipse-workspace\jre"/>
+    <property name="sun.java.command" value="org.codehaus.classworlds.Launcher -Didea.version=2021.3.3 package"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="zh"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_131"/>
+    <property name="java.ext.dirs" value="D:\Eclipse-workspace\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext"/>
+    <property name="sun.boot.class.path" value="D:\Eclipse-workspace\jre\lib\resources.jar;D:\Eclipse-workspace\jre\lib\rt.jar;D:\Eclipse-workspace\jre\lib\sunrsasign.jar;D:\Eclipse-workspace\jre\lib\jsse.jar;D:\Eclipse-workspace\jre\lib\jce.jar;D:\Eclipse-workspace\jre\lib\charsets.jar;D:\Eclipse-workspace\jre\lib\jfr.jar;D:\Eclipse-workspace\jre\classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="D:\IntelliJ IDEA 2021.3.3\plugins\maven\lib\maven3"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+  <testcase classname="com.atguigu.mybatis.test.CacheMapperTest" name="testTwoCache" time="1.408">
+    <error message="
+### Error querying database.  Cause: java.sql.SQLException: Access denied for user &apos;root&apos;@&apos;localhost&apos; (using password: YES)
+### The error may exist in com/atguigu/mybatis/mapper/CacheMapper.xml
+### The error may involve com.atguigu.mybatis.mapper.CacheMapper.getEmpByEid
+### The error occurred while executing a query
+### Cause: java.sql.SQLException: Access denied for user &apos;root&apos;@&apos;localhost&apos; (using password: YES)" type="org.apache.ibatis.exceptions.PersistenceException">org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: java.sql.SQLException: Access denied for user &apos;root&apos;@&apos;localhost&apos; (using password: YES)
+### The error may exist in com/atguigu/mybatis/mapper/CacheMapper.xml
+### The error may involve com.atguigu.mybatis.mapper.CacheMapper.getEmpByEid
+### The error occurred while executing a query
+### Cause: java.sql.SQLException: Access denied for user &apos;root&apos;@&apos;localhost&apos; (using password: YES)
+	at org.apache.ibatis.exceptions.ExceptionFactory.wrapException(ExceptionFactory.java:30)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:153)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:145)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:140)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectOne(DefaultSqlSession.java:76)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:87)
+	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:145)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:86)
+	at com.sun.proxy.$Proxy11.getEmpByEid(Unknown Source)
+	at com.atguigu.mybatis.test.CacheMapperTest.testTwoCache(CacheMapperTest.java:45)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: java.sql.SQLException: Access denied for user &apos;root&apos;@&apos;localhost&apos; (using password: YES)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1056)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:957)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3378)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3310)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:910)
+	at com.mysql.jdbc.MysqlIO.secureAuth411(MysqlIO.java:3810)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1272)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:1992)
+	at com.mysql.jdbc.ConnectionImpl.&lt;init&gt;(ConnectionImpl.java:720)
+	at com.mysql.jdbc.JDBC4Connection.&lt;init&gt;(JDBC4Connection.java:46)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:403)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:293)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:283)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:208)
+	at org.apache.ibatis.datasource.unpooled.UnpooledDataSource.doGetConnection(UnpooledDataSource.java:224)
+	at org.apache.ibatis.datasource.unpooled.UnpooledDataSource.doGetConnection(UnpooledDataSource.java:219)
+	at org.apache.ibatis.datasource.unpooled.UnpooledDataSource.getConnection(UnpooledDataSource.java:95)
+	at org.apache.ibatis.datasource.pooled.PooledDataSource.popConnection(PooledDataSource.java:432)
+	at org.apache.ibatis.datasource.pooled.PooledDataSource.getConnection(PooledDataSource.java:89)
+	at org.apache.ibatis.transaction.jdbc.JdbcTransaction.openConnection(JdbcTransaction.java:139)
+	at org.apache.ibatis.transaction.jdbc.JdbcTransaction.getConnection(JdbcTransaction.java:61)
+	at org.apache.ibatis.executor.BaseExecutor.getConnection(BaseExecutor.java:337)
+	at org.apache.ibatis.executor.SimpleExecutor.prepareStatement(SimpleExecutor.java:86)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:62)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:325)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:103)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:89)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:151)
+	... 37 more
+</error>
+    <system-out>00:46:02,965 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback-test.xml]
+00:46:02,965 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback.groovy]
+00:46:02,965 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Found resource [logback.xml] at [file:/D:/IDEA%20Java%20Coding/MyBatis/MyBatis_demo3/target/classes/logback.xml]
+00:46:03,069 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - About to instantiate appender of type [ch.qos.logback.core.ConsoleAppender]
+00:46:03,074 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - Naming appender as [STDOUT]
+00:46:03,081 |-INFO in ch.qos.logback.core.joran.action.NestedComplexPropertyIA - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+00:46:03,117 |-INFO in ch.qos.logback.classic.joran.action.RootLoggerAction - Setting level of ROOT logger to DEBUG
+00:46:03,117 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [STDOUT] to Logger[ROOT]
+00:46:03,118 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting level of logger [com.atguigu.crowd.mapper] to DEBUG
+00:46:03,118 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - End of configuration.
+00:46:03,119 |-INFO in ch.qos.logback.classic.joran.JoranConfigurator@57f23557 - Registering current configuration as safe fallback point
+[00:46:03.124] [DEBUG] [main] [org.apache.ibatis.logging.LogFactory] [Logging initialized using &apos;class org.apache.ibatis.logging.slf4j.Slf4jImpl&apos; adapter.]
+[00:46:03.128] [DEBUG] [main] [org.apache.ibatis.io.VFS] [Class not found: org.jboss.vfs.VFS]
+[00:46:03.128] [DEBUG] [main] [org.apache.ibatis.io.JBoss6VFS] [JBoss 6 VFS API is not available in this environment.]
+[00:46:03.129] [DEBUG] [main] [org.apache.ibatis.io.VFS] [Class not found: org.jboss.vfs.VirtualFile]
+[00:46:03.129] [DEBUG] [main] [org.apache.ibatis.io.VFS] [VFS implementation org.apache.ibatis.io.JBoss6VFS is not valid in this environment.]
+[00:46:03.130] [DEBUG] [main] [org.apache.ibatis.io.VFS] [Using VFS adapter org.apache.ibatis.io.DefaultVFS]
+[00:46:03.130] [DEBUG] [main] [org.apache.ibatis.io.DefaultVFS] [Find JAR URL: file:/D:/IDEA%20Java%20Coding/MyBatis/MyBatis_demo3/target/classes/com/atguigu/mybatis/pojo]
+[00:46:03.130] [DEBUG] [main] [org.apache.ibatis.io.DefaultVFS] [Not a JAR: file:/D:/IDEA%20Java%20Coding/MyBatis/MyBatis_demo3/target/classes/com/atguigu/mybatis/pojo]
+[00:46:03.171] [DEBUG] [main] [org.apache.ibatis.io.DefaultVFS] [Reader entry: Dept.class]
+[00:46:03.171] [DEBUG] [main] [org.apache.ibatis.io.DefaultVFS] [Reader entry: Emp.class]
+[00:46:03.172] [DEBUG] [main] [org.apache.ibatis.io.DefaultVFS] [Listing file:/D:/IDEA%20Java%20Coding/MyBatis/MyBatis_demo3/target/classes/com/atguigu/mybatis/pojo]
+[00:46:03.172] [DEBUG] [main] [org.apache.ibatis.io.DefaultVFS] [Find JAR URL: file:/D:/IDEA%20Java%20Coding/MyBatis/MyBatis_demo3/target/classes/com/atguigu/mybatis/pojo/Dept.class]
+[00:46:03.172] [DEBUG] [main] [org.apache.ibatis.io.DefaultVFS] [Not a JAR: file:/D:/IDEA%20Java%20Coding/MyBatis/MyBatis_demo3/target/classes/com/atguigu/mybatis/pojo/Dept.class]
+[00:46:03.173] [DEBUG] [main] [org.apache.ibatis.io.DefaultVFS] [Reader entry: ����&amp;#0;&amp;#0;&amp;#0;1&amp;#0;D&amp;#7;&amp;#0;2]
+[00:46:03.173] [DEBUG] [main] [org.apache.ibatis.io.DefaultVFS] [Find JAR URL: file:/D:/IDEA%20Java%20Coding/MyBatis/MyBatis_demo3/target/classes/com/atguigu/mybatis/pojo/Emp.class]
+[00:46:03.173] [DEBUG] [main] [org.apache.ibatis.io.DefaultVFS] [Not a JAR: file:/D:/IDEA%20Java%20Coding/MyBatis/MyBatis_demo3/target/classes/com/atguigu/mybatis/pojo/Emp.class]
+[00:46:03.174] [DEBUG] [main] [org.apache.ibatis.io.DefaultVFS] [Reader entry: ����&amp;#0;&amp;#0;&amp;#0;1&amp;#0;T&amp;#7;&amp;#0;&lt;]
+[00:46:03.175] [DEBUG] [main] [org.apache.ibatis.io.ResolverUtil] [Checking to see if class com.atguigu.mybatis.pojo.Dept matches criteria [is assignable to Object]]
+[00:46:03.176] [DEBUG] [main] [org.apache.ibatis.io.ResolverUtil] [Checking to see if class com.atguigu.mybatis.pojo.Emp matches criteria [is assignable to Object]]
+[00:46:03.194] [DEBUG] [main] [org.apache.ibatis.datasource.pooled.PooledDataSource] [PooledDataSource forcefully closed/removed all connections.]
+[00:46:03.194] [DEBUG] [main] [org.apache.ibatis.datasource.pooled.PooledDataSource] [PooledDataSource forcefully closed/removed all connections.]
+[00:46:03.194] [DEBUG] [main] [org.apache.ibatis.datasource.pooled.PooledDataSource] [PooledDataSource forcefully closed/removed all connections.]
+[00:46:03.194] [DEBUG] [main] [org.apache.ibatis.datasource.pooled.PooledDataSource] [PooledDataSource forcefully closed/removed all connections.]
+[00:46:03.196] [DEBUG] [main] [org.apache.ibatis.io.DefaultVFS] [Find JAR URL: file:/D:/IDEA%20Java%20Coding/MyBatis/MyBatis_demo3/target/classes/com/atguigu/mybatis/mapper]
+[00:46:03.197] [DEBUG] [main] [org.apache.ibatis.io.DefaultVFS] [Not a JAR: file:/D:/IDEA%20Java%20Coding/MyBatis/MyBatis_demo3/target/classes/com/atguigu/mybatis/mapper]
+[00:46:03.197] [DEBUG] [main] [org.apache.ibatis.io.DefaultVFS] [Reader entry: CacheMapper.class]
+[00:46:03.197] [DEBUG] [main] [org.apache.ibatis.io.DefaultVFS] [Reader entry: CacheMapper.xml]
+[00:46:03.197] [DEBUG] [main] [org.apache.ibatis.io.DefaultVFS] [Reader entry: DeptMapper.class]
+[00:46:03.197] [DEBUG] [main] [org.apache.ibatis.io.DefaultVFS] [Reader entry: DeptMapper.xml]
+[00:46:03.197] [DEBUG] [main] [org.apache.ibatis.io.DefaultVFS] [Reader entry: DynamicSQLMapper.class]
+[00:46:03.198] [DEBUG] [main] [org.apache.ibatis.io.DefaultVFS] [Reader entry: DynamicSQLMapper.xml]
+[00:46:03.198] [DEBUG] [main] [org.apache.ibatis.io.DefaultVFS] [Reader entry: EmpMapper.class]
+[00:46:03.198] [DEBUG] [main] [org.apache.ibatis.io.DefaultVFS] [Reader entry: EmpMapper.xml]
+[00:46:03.199] [DEBUG] [main] [org.apache.ibatis.io.DefaultVFS] [Listing file:/D:/IDEA%20Java%20Coding/MyBatis/MyBatis_demo3/target/classes/com/atguigu/mybatis/mapper]
+[00:46:03.199] [DEBUG] [main] [org.apache.ibatis.io.DefaultVFS] [Find JAR URL: file:/D:/IDEA%20Java%20Coding/MyBatis/MyBatis_demo3/target/classes/com/atguigu/mybatis/mapper/CacheMapper.class]
+[00:46:03.199] [DEBUG] [main] [org.apache.ibatis.io.DefaultVFS] [Not a JAR: file:/D:/IDEA%20Java%20Coding/MyBatis/MyBatis_demo3/target/classes/com/atguigu/mybatis/mapper/CacheMapper.class]
+[00:46:03.199] [DEBUG] [main] [org.apache.ibatis.io.DefaultVFS] [Reader entry: ����&amp;#0;&amp;#0;&amp;#0;1&amp;#0;&amp;#15;&amp;#7;&amp;#0;]
+[00:46:03.199] [DEBUG] [main] [org.apache.ibatis.io.DefaultVFS] [Find JAR URL: file:/D:/IDEA%20Java%20Coding/MyBatis/MyBatis_demo3/target/classes/com/atguigu/mybatis/mapper/CacheMapper.xml]
+[00:46:03.200] [DEBUG] [main] [org.apache.ibatis.io.DefaultVFS] [Not a JAR: file:/D:/IDEA%20Java%20Coding/MyBatis/MyBatis_demo3/target/classes/com/atguigu/mybatis/mapper/CacheMapper.xml]
+[00:46:03.202] [DEBUG] [main] [org.apache.ibatis.io.DefaultVFS] [Reader entry: &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; ?&gt;]
+[00:46:03.202] [DEBUG] [main] [org.apache.ibatis.io.DefaultVFS] [Find JAR URL: file:/D:/IDEA%20Java%20Coding/MyBatis/MyBatis_demo3/target/classes/com/atguigu/mybatis/mapper/DeptMapper.class]
+[00:46:03.203] [DEBUG] [main] [org.apache.ibatis.io.DefaultVFS] [Not a JAR: file:/D:/IDEA%20Java%20Coding/MyBatis/MyBatis_demo3/target/classes/com/atguigu/mybatis/mapper/DeptMapper.class]
+[00:46:03.203] [DEBUG] [main] [org.apache.ibatis.io.DefaultVFS] [Reader entry: ����&amp;#0;&amp;#0;&amp;#0;1&amp;#0;&amp;#15;&amp;#7;&amp;#0;]
+[00:46:03.204] [DEBUG] [main] [org.apache.ibatis.io.DefaultVFS] [Find JAR URL: file:/D:/IDEA%20Java%20Coding/MyBatis/MyBatis_demo3/target/classes/com/atguigu/mybatis/mapper/DeptMapper.xml]
+[00:46:03.204] [DEBUG] [main] [org.apache.ibatis.io.DefaultVFS] [Not a JAR: file:/D:/IDEA%20Java%20Coding/MyBatis/MyBatis_demo3/target/classes/com/atguigu/mybatis/mapper/DeptMapper.xml]
+[00:46:03.205] [DEBUG] [main] [org.apache.ibatis.io.DefaultVFS] [Reader entry: &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; ?&gt;]
+[00:46:03.206] [DEBUG] [main] [org.apache.ibatis.io.DefaultVFS] [Find JAR URL: file:/D:/IDEA%20Java%20Coding/MyBatis/MyBatis_demo3/target/classes/com/atguigu/mybatis/mapper/DynamicSQLMapper.class]
+[00:46:03.206] [DEBUG] [main] [org.apache.ibatis.io.DefaultVFS] [Not a JAR: file:/D:/IDEA%20Java%20Coding/MyBatis/MyBatis_demo3/target/classes/com/atguigu/mybatis/mapper/DynamicSQLMapper.class]
+[00:46:03.207] [DEBUG] [main] [org.apache.ibatis.io.DefaultVFS] [Reader entry: ����&amp;#0;&amp;#0;&amp;#0;1&amp;#0;&amp;#22;&amp;#7;&amp;#0;&amp;#20;&amp;#7;&amp;#0;&amp;#21;&amp;#1;&amp;#0;&amp;#17;getEmpByCondition&amp;#1;&amp;#0;0(Lcom/atguigu/mybatis/pojo/Emp;)Ljava/util/List;&amp;#1;&amp;#0;	Signature&amp;#1;&amp;#0;P(Lcom/atguigu/mybatis/pojo/Emp;)Ljava/util/List&lt;Lcom/atguigu/mybatis/pojo/Emp;&gt;;&amp;#1;&amp;#0;&amp;#14;getEmpByChoose&amp;#1;&amp;#0;&amp;#17;deleteMoreByArray&amp;#1;&amp;#0;&amp;#23;([Ljava/lang/Integer;)I&amp;#1;&amp;#0;&quot;RuntimeVisibleParameterAnnotations&amp;#1;&amp;#0;%Lorg/apache/ibatis/annotations/Param;&amp;#1;&amp;#0;&amp;#5;value&amp;#1;&amp;#0;&amp;#4;eids&amp;#1;&amp;#0;&amp;#16;insertMoreByList&amp;#1;&amp;#0;&amp;#19;(Ljava/util/List;)I&amp;#1;&amp;#0;3(Ljava/util/List&lt;Lcom/atguigu/mybatis/pojo/Emp;&gt;;)I&amp;#1;&amp;#0;&amp;#4;emps&amp;#1;&amp;#0;]
+[00:46:03.207] [DEBUG] [main] [org.apache.ibatis.io.DefaultVFS] [Find JAR URL: file:/D:/IDEA%20Java%20Coding/MyBatis/MyBatis_demo3/target/classes/com/atguigu/mybatis/mapper/DynamicSQLMapper.xml]
+[00:46:03.207] [DEBUG] [main] [org.apache.ibatis.io.DefaultVFS] [Not a JAR: file:/D:/IDEA%20Java%20Coding/MyBatis/MyBatis_demo3/target/classes/com/atguigu/mybatis/mapper/DynamicSQLMapper.xml]
+[00:46:03.209] [DEBUG] [main] [org.apache.ibatis.io.DefaultVFS] [Reader entry: &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; ?&gt;]
+[00:46:03.209] [DEBUG] [main] [org.apache.ibatis.io.DefaultVFS] [Find JAR URL: file:/D:/IDEA%20Java%20Coding/MyBatis/MyBatis_demo3/target/classes/com/atguigu/mybatis/mapper/EmpMapper.class]
+[00:46:03.209] [DEBUG] [main] [org.apache.ibatis.io.DefaultVFS] [Not a JAR: file:/D:/IDEA%20Java%20Coding/MyBatis/MyBatis_demo3/target/classes/com/atguigu/mybatis/mapper/EmpMapper.class]
+[00:46:03.210] [DEBUG] [main] [org.apache.ibatis.io.DefaultVFS] [Reader entry: ����&amp;#0;&amp;#0;&amp;#0;1&amp;#0;&amp;#22;&amp;#7;&amp;#0;&amp;#20;&amp;#7;&amp;#0;&amp;#21;&amp;#1;&amp;#0;	getAllEmp&amp;#1;&amp;#0;&amp;#18;()Ljava/util/List;&amp;#1;&amp;#0;	Signature&amp;#1;&amp;#0;2()Ljava/util/List&lt;Lcom/atguigu/mybatis/pojo/Emp;&gt;;&amp;#1;&amp;#0;]
+[00:46:03.210] [DEBUG] [main] [org.apache.ibatis.io.DefaultVFS] [Find JAR URL: file:/D:/IDEA%20Java%20Coding/MyBatis/MyBatis_demo3/target/classes/com/atguigu/mybatis/mapper/EmpMapper.xml]
+[00:46:03.210] [DEBUG] [main] [org.apache.ibatis.io.DefaultVFS] [Not a JAR: file:/D:/IDEA%20Java%20Coding/MyBatis/MyBatis_demo3/target/classes/com/atguigu/mybatis/mapper/EmpMapper.xml]
+[00:46:03.212] [DEBUG] [main] [org.apache.ibatis.io.DefaultVFS] [Reader entry: &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; ?&gt;]
+[00:46:03.212] [DEBUG] [main] [org.apache.ibatis.io.ResolverUtil] [Checking to see if class com.atguigu.mybatis.mapper.CacheMapper matches criteria [is assignable to Object]]
+[00:46:03.212] [DEBUG] [main] [org.apache.ibatis.io.ResolverUtil] [Checking to see if class com.atguigu.mybatis.mapper.DeptMapper matches criteria [is assignable to Object]]
+[00:46:03.213] [DEBUG] [main] [org.apache.ibatis.io.ResolverUtil] [Checking to see if class com.atguigu.mybatis.mapper.DynamicSQLMapper matches criteria [is assignable to Object]]
+[00:46:03.213] [DEBUG] [main] [org.apache.ibatis.io.ResolverUtil] [Checking to see if class com.atguigu.mybatis.mapper.EmpMapper matches criteria [is assignable to Object]]
+[00:46:03.321] [DEBUG] [main] [net.sf.ehcache.config.ConfigurationFactory] [Configuring ehcache from ehcache.xml found in the classpath: file:/D:/IDEA%20Java%20Coding/MyBatis/MyBatis_demo3/target/classes/ehcache.xml]
+[00:46:03.322] [DEBUG] [main] [net.sf.ehcache.config.ConfigurationFactory] [Configuring ehcache from URL: file:/D:/IDEA%20Java%20Coding/MyBatis/MyBatis_demo3/target/classes/ehcache.xml]
+[00:46:03.324] [DEBUG] [main] [net.sf.ehcache.config.ConfigurationFactory] [Configuring ehcache from InputStream]
+[00:46:03.335] [DEBUG] [main] [net.sf.ehcache.config.BeanHandler] [Ignoring ehcache attribute xmlns:xsi]
+[00:46:03.335] [DEBUG] [main] [net.sf.ehcache.config.BeanHandler] [Ignoring ehcache attribute xsi:noNamespaceSchemaLocation]
+[00:46:03.337] [DEBUG] [main] [net.sf.ehcache.config.DiskStoreConfiguration] [Disk Store Path: D:\atguigu\ehcache]
+[00:46:03.420] [DEBUG] [main] [net.sf.ehcache.CacheManager] [Creating new CacheManager with default config]
+[00:46:03.424] [DEBUG] [main] [net.sf.ehcache.util.PropertyUtil] [propertiesString is null.]
+[00:46:03.437] [DEBUG] [main] [net.sf.ehcache.config.ConfigurationHelper] [No CacheManagerEventListenerFactory class specified. Skipping...]
+[00:46:03.738] [DEBUG] [main] [net.sf.ehcache.Cache] [No BootstrapCacheLoaderFactory class specified. Skipping...]
+[00:46:03.738] [DEBUG] [main] [net.sf.ehcache.Cache] [CacheWriter factory not configured. Skipping...]
+[00:46:03.738] [DEBUG] [main] [net.sf.ehcache.config.ConfigurationHelper] [No CacheExceptionHandlerFactory class specified. Skipping...]
+[00:46:03.758] [DEBUG] [main] [net.sf.ehcache.DiskStorePathManager] [Using diskstore path D:\atguigu\ehcache]
+[00:46:03.758] [DEBUG] [main] [net.sf.ehcache.DiskStorePathManager] [Holding exclusive lock on D:\atguigu\ehcache\.ehcache-diskstore.lock]
+[00:46:03.759] [DEBUG] [main] [net.sf.ehcache.store.disk.DiskStorageFactory] [Failed to delete file com%002eatguigu%002emybatis%002emapper%002e%0043ache%004dapper.data]
+[00:46:03.759] [DEBUG] [main] [net.sf.ehcache.store.disk.DiskStorageFactory] [Failed to delete file com%002eatguigu%002emybatis%002emapper%002e%0043ache%004dapper.index]
+[00:46:03.765] [DEBUG] [main] [net.sf.ehcache.store.disk.DiskStorageFactory] [Matching data file missing (or empty) for index file. Deleting index file D:\atguigu\ehcache\com%002eatguigu%002emybatis%002emapper%002e%0043ache%004dapper.index]
+[00:46:03.765] [DEBUG] [main] [net.sf.ehcache.store.disk.DiskStorageFactory] [Failed to delete file com%002eatguigu%002emybatis%002emapper%002e%0043ache%004dapper.index]
+[00:46:03.807] [DEBUG] [main] [net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl] [Mocking Pass-Through Statistic: LOCAL_OFFHEAP_SIZE]
+[00:46:03.808] [DEBUG] [main] [net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl] [Mocking Pass-Through Statistic: LOCAL_OFFHEAP_SIZE_BYTES]
+[00:46:03.808] [DEBUG] [main] [net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl] [Mocking Pass-Through Statistic: WRITER_QUEUE_LENGTH]
+[00:46:03.809] [DEBUG] [main] [net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl] [Mocking Pass-Through Statistic: REMOTE_SIZE]
+[00:46:03.809] [DEBUG] [main] [net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl] [Mocking Pass-Through Statistic: LAST_REJOIN_TIMESTAMP]
+[00:46:03.818] [DEBUG] [main] [net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl] [Mocking Operation Statistic: OFFHEAP_GET]
+[00:46:03.819] [DEBUG] [main] [net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl] [Mocking Operation Statistic: OFFHEAP_PUT]
+[00:46:03.820] [DEBUG] [main] [net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl] [Mocking Operation Statistic: OFFHEAP_REMOVE]
+[00:46:03.821] [DEBUG] [main] [net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl] [Mocking Operation Statistic: XA_COMMIT]
+[00:46:03.821] [DEBUG] [main] [net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl] [Mocking Operation Statistic: XA_ROLLBACK]
+[00:46:03.822] [DEBUG] [main] [net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl] [Mocking Operation Statistic: XA_RECOVERY]
+[00:46:03.823] [DEBUG] [main] [net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl] [Mocking Operation Statistic: CLUSTER_EVENT]
+[00:46:03.823] [DEBUG] [main] [net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl] [Mocking Operation Statistic: NONSTOP]
+[00:46:03.829] [DEBUG] [main] [net.sf.ehcache.Cache] [Initialised cache: com.atguigu.mybatis.mapper.CacheMapper]
+[00:46:03.829] [DEBUG] [main] [net.sf.ehcache.config.ConfigurationHelper] [CacheDecoratorFactory not configured for defaultCache. Skipping for &apos;com.atguigu.mybatis.mapper.CacheMapper&apos;.]
+[00:46:03.872] [DEBUG] [main] [com.atguigu.mybatis.mapper.CacheMapper] [Cache Hit Ratio [com.atguigu.mybatis.mapper.CacheMapper]: 0.0]
+[00:46:03.876] [DEBUG] [main] [org.apache.ibatis.transaction.jdbc.JdbcTransaction] [Opening JDBC Connection]
+</system-out>
+  </testcase>
+  <testcase classname="com.atguigu.mybatis.test.CacheMapperTest" name="testOneCache" time="0.06">
+    <error message="
+### Error querying database.  Cause: java.sql.SQLException: Access denied for user &apos;root&apos;@&apos;localhost&apos; (using password: YES)
+### The error may exist in com/atguigu/mybatis/mapper/CacheMapper.xml
+### The error may involve com.atguigu.mybatis.mapper.CacheMapper.getEmpByEid
+### The error occurred while executing a query
+### Cause: java.sql.SQLException: Access denied for user &apos;root&apos;@&apos;localhost&apos; (using password: YES)" type="org.apache.ibatis.exceptions.PersistenceException">org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: java.sql.SQLException: Access denied for user &apos;root&apos;@&apos;localhost&apos; (using password: YES)
+### The error may exist in com/atguigu/mybatis/mapper/CacheMapper.xml
+### The error may involve com.atguigu.mybatis.mapper.CacheMapper.getEmpByEid
+### The error occurred while executing a query
+### Cause: java.sql.SQLException: Access denied for user &apos;root&apos;@&apos;localhost&apos; (using password: YES)
+	at org.apache.ibatis.exceptions.ExceptionFactory.wrapException(ExceptionFactory.java:30)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:153)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:145)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:140)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectOne(DefaultSqlSession.java:76)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:87)
+	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:145)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:86)
+	at com.sun.proxy.$Proxy11.getEmpByEid(Unknown Source)
+	at com.atguigu.mybatis.test.CacheMapperTest.testOneCache(CacheMapperTest.java:26)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: java.sql.SQLException: Access denied for user &apos;root&apos;@&apos;localhost&apos; (using password: YES)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1056)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:957)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3378)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3310)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:910)
+	at com.mysql.jdbc.MysqlIO.secureAuth411(MysqlIO.java:3810)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1272)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:1992)
+	at com.mysql.jdbc.ConnectionImpl.&lt;init&gt;(ConnectionImpl.java:720)
+	at com.mysql.jdbc.JDBC4Connection.&lt;init&gt;(JDBC4Connection.java:46)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:403)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:293)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:283)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:208)
+	at org.apache.ibatis.datasource.unpooled.UnpooledDataSource.doGetConnection(UnpooledDataSource.java:224)
+	at org.apache.ibatis.datasource.unpooled.UnpooledDataSource.doGetConnection(UnpooledDataSource.java:219)
+	at org.apache.ibatis.datasource.unpooled.UnpooledDataSource.getConnection(UnpooledDataSource.java:95)
+	at org.apache.ibatis.datasource.pooled.PooledDataSource.popConnection(PooledDataSource.java:432)
+	at org.apache.ibatis.datasource.pooled.PooledDataSource.getConnection(PooledDataSource.java:89)
+	at org.apache.ibatis.transaction.jdbc.JdbcTransaction.openConnection(JdbcTransaction.java:139)
+	at org.apache.ibatis.transaction.jdbc.JdbcTransaction.getConnection(JdbcTransaction.java:61)
+	at org.apache.ibatis.executor.BaseExecutor.getConnection(BaseExecutor.java:337)
+	at org.apache.ibatis.executor.SimpleExecutor.prepareStatement(SimpleExecutor.java:86)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:62)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:325)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:103)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:89)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:151)
+	... 37 more
+</error>
+    <system-out>[00:46:04.018] [DEBUG] [main] [org.apache.ibatis.io.DefaultVFS] [Find JAR URL: file:/D:/IDEA%20Java%20Coding/MyBatis/MyBatis_demo3/target/classes/com/atguigu/mybatis/pojo]
+[00:46:04.018] [DEBUG] [main] [org.apache.ibatis.io.DefaultVFS] [Not a JAR: file:/D:/IDEA%20Java%20Coding/MyBatis/MyBatis_demo3/target/classes/com/atguigu/mybatis/pojo]
+[00:46:04.018] [DEBUG] [main] [org.apache.ibatis.io.DefaultVFS] [Reader entry: Dept.class]
+[00:46:04.019] [DEBUG] [main] [org.apache.ibatis.io.DefaultVFS] [Reader entry: Emp.class]
+[00:46:04.019] [DEBUG] [main] [org.apache.ibatis.io.DefaultVFS] [Listing file:/D:/IDEA%20Java%20Coding/MyBatis/MyBatis_demo3/target/classes/com/atguigu/mybatis/pojo]
+[00:46:04.019] [DEBUG] [main] [org.apache.ibatis.io.DefaultVFS] [Find JAR URL: file:/D:/IDEA%20Java%20Coding/MyBatis/MyBatis_demo3/target/classes/com/atguigu/mybatis/pojo/Dept.class]
+[00:46:04.019] [DEBUG] [main] [org.apache.ibatis.io.DefaultVFS] [Not a JAR: file:/D:/IDEA%20Java%20Coding/MyBatis/MyBatis_demo3/target/classes/com/atguigu/mybatis/pojo/Dept.class]
+[00:46:04.019] [DEBUG] [main] [org.apache.ibatis.io.DefaultVFS] [Reader entry: ����&amp;#0;&amp;#0;&amp;#0;1&amp;#0;D&amp;#7;&amp;#0;2]
+[00:46:04.020] [DEBUG] [main] [org.apache.ibatis.io.DefaultVFS] [Find JAR URL: file:/D:/IDEA%20Java%20Coding/MyBatis/MyBatis_demo3/target/classes/com/atguigu/mybatis/pojo/Emp.class]
+[00:46:04.020] [DEBUG] [main] [org.apache.ibatis.io.DefaultVFS] [Not a JAR: file:/D:/IDEA%20Java%20Coding/MyBatis/MyBatis_demo3/target/classes/com/atguigu/mybatis/pojo/Emp.class]
+[00:46:04.020] [DEBUG] [main] [org.apache.ibatis.io.DefaultVFS] [Reader entry: ����&amp;#0;&amp;#0;&amp;#0;1&amp;#0;T&amp;#7;&amp;#0;&lt;]
+[00:46:04.020] [DEBUG] [main] [org.apache.ibatis.io.ResolverUtil] [Checking to see if class com.atguigu.mybatis.pojo.Dept matches criteria [is assignable to Object]]
+[00:46:04.020] [DEBUG] [main] [org.apache.ibatis.io.ResolverUtil] [Checking to see if class com.atguigu.mybatis.pojo.Emp matches criteria [is assignable to Object]]
+[00:46:04.022] [DEBUG] [main] [org.apache.ibatis.datasource.pooled.PooledDataSource] [PooledDataSource forcefully closed/removed all connections.]
+[00:46:04.022] [DEBUG] [main] [org.apache.ibatis.datasource.pooled.PooledDataSource] [PooledDataSource forcefully closed/removed all connections.]
+[00:46:04.022] [DEBUG] [main] [org.apache.ibatis.datasource.pooled.PooledDataSource] [PooledDataSource forcefully closed/removed all connections.]
+[00:46:04.022] [DEBUG] [main] [org.apache.ibatis.datasource.pooled.PooledDataSource] [PooledDataSource forcefully closed/removed all connections.]
+[00:46:04.025] [DEBUG] [main] [org.apache.ibatis.io.DefaultVFS] [Find JAR URL: file:/D:/IDEA%20Java%20Coding/MyBatis/MyBatis_demo3/target/classes/com/atguigu/mybatis/mapper]
+[00:46:04.025] [DEBUG] [main] [org.apache.ibatis.io.DefaultVFS] [Not a JAR: file:/D:/IDEA%20Java%20Coding/MyBatis/MyBatis_demo3/target/classes/com/atguigu/mybatis/mapper]
+[00:46:04.025] [DEBUG] [main] [org.apache.ibatis.io.DefaultVFS] [Reader entry: CacheMapper.class]
+[00:46:04.025] [DEBUG] [main] [org.apache.ibatis.io.DefaultVFS] [Reader entry: CacheMapper.xml]
+[00:46:04.025] [DEBUG] [main] [org.apache.ibatis.io.DefaultVFS] [Reader entry: DeptMapper.class]
+[00:46:04.026] [DEBUG] [main] [org.apache.ibatis.io.DefaultVFS] [Reader entry: DeptMapper.xml]
+[00:46:04.026] [DEBUG] [main] [org.apache.ibatis.io.DefaultVFS] [Reader entry: DynamicSQLMapper.class]
+[00:46:04.026] [DEBUG] [main] [org.apache.ibatis.io.DefaultVFS] [Reader entry: DynamicSQLMapper.xml]
+[00:46:04.026] [DEBUG] [main] [org.apache.ibatis.io.DefaultVFS] [Reader entry: EmpMapper.class]
+[00:46:04.026] [DEBUG] [main] [org.apache.ibatis.io.DefaultVFS] [Reader entry: EmpMapper.xml]
+[00:46:04.027] [DEBUG] [main] [org.apache.ibatis.io.DefaultVFS] [Listing file:/D:/IDEA%20Java%20Coding/MyBatis/MyBatis_demo3/target/classes/com/atguigu/mybatis/mapper]
+[00:46:04.027] [DEBUG] [main] [org.apache.ibatis.io.DefaultVFS] [Find JAR URL: file:/D:/IDEA%20Java%20Coding/MyBatis/MyBatis_demo3/target/classes/com/atguigu/mybatis/mapper/CacheMapper.class]
+[00:46:04.027] [DEBUG] [main] [org.apache.ibatis.io.DefaultVFS] [Not a JAR: file:/D:/IDEA%20Java%20Coding/MyBatis/MyBatis_demo3/target/classes/com/atguigu/mybatis/mapper/CacheMapper.class]
+[00:46:04.027] [DEBUG] [main] [org.apache.ibatis.io.DefaultVFS] [Reader entry: ����&amp;#0;&amp;#0;&amp;#0;1&amp;#0;&amp;#15;&amp;#7;&amp;#0;]
+[00:46:04.028] [DEBUG] [main] [org.apache.ibatis.io.DefaultVFS] [Find JAR URL: file:/D:/IDEA%20Java%20Coding/MyBatis/MyBatis_demo3/target/classes/com/atguigu/mybatis/mapper/CacheMapper.xml]
+[00:46:04.028] [DEBUG] [main] [org.apache.ibatis.io.DefaultVFS] [Not a JAR: file:/D:/IDEA%20Java%20Coding/MyBatis/MyBatis_demo3/target/classes/com/atguigu/mybatis/mapper/CacheMapper.xml]
+[00:46:04.028] [DEBUG] [main] [org.apache.ibatis.io.DefaultVFS] [Reader entry: &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; ?&gt;]
+[00:46:04.028] [DEBUG] [main] [org.apache.ibatis.io.DefaultVFS] [Find JAR URL: file:/D:/IDEA%20Java%20Coding/MyBatis/MyBatis_demo3/target/classes/com/atguigu/mybatis/mapper/DeptMapper.class]
+[00:46:04.028] [DEBUG] [main] [org.apache.ibatis.io.DefaultVFS] [Not a JAR: file:/D:/IDEA%20Java%20Coding/MyBatis/MyBatis_demo3/target/classes/com/atguigu/mybatis/mapper/DeptMapper.class]
+[00:46:04.029] [DEBUG] [main] [org.apache.ibatis.io.DefaultVFS] [Reader entry: ����&amp;#0;&amp;#0;&amp;#0;1&amp;#0;&amp;#15;&amp;#7;&amp;#0;]
+[00:46:04.029] [DEBUG] [main] [org.apache.ibatis.io.DefaultVFS] [Find JAR URL: file:/D:/IDEA%20Java%20Coding/MyBatis/MyBatis_demo3/target/classes/com/atguigu/mybatis/mapper/DeptMapper.xml]
+[00:46:04.029] [DEBUG] [main] [org.apache.ibatis.io.DefaultVFS] [Not a JAR: file:/D:/IDEA%20Java%20Coding/MyBatis/MyBatis_demo3/target/classes/com/atguigu/mybatis/mapper/DeptMapper.xml]
+[00:46:04.029] [DEBUG] [main] [org.apache.ibatis.io.DefaultVFS] [Reader entry: &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; ?&gt;]
+[00:46:04.030] [DEBUG] [main] [org.apache.ibatis.io.DefaultVFS] [Find JAR URL: file:/D:/IDEA%20Java%20Coding/MyBatis/MyBatis_demo3/target/classes/com/atguigu/mybatis/mapper/DynamicSQLMapper.class]
+[00:46:04.030] [DEBUG] [main] [org.apache.ibatis.io.DefaultVFS] [Not a JAR: file:/D:/IDEA%20Java%20Coding/MyBatis/MyBatis_demo3/target/classes/com/atguigu/mybatis/mapper/DynamicSQLMapper.class]
+[00:46:04.030] [DEBUG] [main] [org.apache.ibatis.io.DefaultVFS] [Reader entry: ����&amp;#0;&amp;#0;&amp;#0;1&amp;#0;&amp;#22;&amp;#7;&amp;#0;&amp;#20;&amp;#7;&amp;#0;&amp;#21;&amp;#1;&amp;#0;&amp;#17;getEmpByCondition&amp;#1;&amp;#0;0(Lcom/atguigu/mybatis/pojo/Emp;)Ljava/util/List;&amp;#1;&amp;#0;	Signature&amp;#1;&amp;#0;P(Lcom/atguigu/mybatis/pojo/Emp;)Ljava/util/List&lt;Lcom/atguigu/mybatis/pojo/Emp;&gt;;&amp;#1;&amp;#0;&amp;#14;getEmpByChoose&amp;#1;&amp;#0;&amp;#17;deleteMoreByArray&amp;#1;&amp;#0;&amp;#23;([Ljava/lang/Integer;)I&amp;#1;&amp;#0;&quot;RuntimeVisibleParameterAnnotations&amp;#1;&amp;#0;%Lorg/apache/ibatis/annotations/Param;&amp;#1;&amp;#0;&amp;#5;value&amp;#1;&amp;#0;&amp;#4;eids&amp;#1;&amp;#0;&amp;#16;insertMoreByList&amp;#1;&amp;#0;&amp;#19;(Ljava/util/List;)I&amp;#1;&amp;#0;3(Ljava/util/List&lt;Lcom/atguigu/mybatis/pojo/Emp;&gt;;)I&amp;#1;&amp;#0;&amp;#4;emps&amp;#1;&amp;#0;]
+[00:46:04.030] [DEBUG] [main] [org.apache.ibatis.io.DefaultVFS] [Find JAR URL: file:/D:/IDEA%20Java%20Coding/MyBatis/MyBatis_demo3/target/classes/com/atguigu/mybatis/mapper/DynamicSQLMapper.xml]
+[00:46:04.030] [DEBUG] [main] [org.apache.ibatis.io.DefaultVFS] [Not a JAR: file:/D:/IDEA%20Java%20Coding/MyBatis/MyBatis_demo3/target/classes/com/atguigu/mybatis/mapper/DynamicSQLMapper.xml]
+[00:46:04.031] [DEBUG] [main] [org.apache.ibatis.io.DefaultVFS] [Reader entry: &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; ?&gt;]
+[00:46:04.031] [DEBUG] [main] [org.apache.ibatis.io.DefaultVFS] [Find JAR URL: file:/D:/IDEA%20Java%20Coding/MyBatis/MyBatis_demo3/target/classes/com/atguigu/mybatis/mapper/EmpMapper.class]
+[00:46:04.031] [DEBUG] [main] [org.apache.ibatis.io.DefaultVFS] [Not a JAR: file:/D:/IDEA%20Java%20Coding/MyBatis/MyBatis_demo3/target/classes/com/atguigu/mybatis/mapper/EmpMapper.class]
+[00:46:04.031] [DEBUG] [main] [org.apache.ibatis.io.DefaultVFS] [Reader entry: ����&amp;#0;&amp;#0;&amp;#0;1&amp;#0;&amp;#22;&amp;#7;&amp;#0;&amp;#20;&amp;#7;&amp;#0;&amp;#21;&amp;#1;&amp;#0;	getAllEmp&amp;#1;&amp;#0;&amp;#18;()Ljava/util/List;&amp;#1;&amp;#0;	Signature&amp;#1;&amp;#0;2()Ljava/util/List&lt;Lcom/atguigu/mybatis/pojo/Emp;&gt;;&amp;#1;&amp;#0;]
+[00:46:04.032] [DEBUG] [main] [org.apache.ibatis.io.DefaultVFS] [Find JAR URL: file:/D:/IDEA%20Java%20Coding/MyBatis/MyBatis_demo3/target/classes/com/atguigu/mybatis/mapper/EmpMapper.xml]
+[00:46:04.032] [DEBUG] [main] [org.apache.ibatis.io.DefaultVFS] [Not a JAR: file:/D:/IDEA%20Java%20Coding/MyBatis/MyBatis_demo3/target/classes/com/atguigu/mybatis/mapper/EmpMapper.xml]
+[00:46:04.032] [DEBUG] [main] [org.apache.ibatis.io.DefaultVFS] [Reader entry: &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; ?&gt;]
+[00:46:04.032] [DEBUG] [main] [org.apache.ibatis.io.ResolverUtil] [Checking to see if class com.atguigu.mybatis.mapper.CacheMapper matches criteria [is assignable to Object]]
+[00:46:04.033] [DEBUG] [main] [org.apache.ibatis.io.ResolverUtil] [Checking to see if class com.atguigu.mybatis.mapper.DeptMapper matches criteria [is assignable to Object]]
+[00:46:04.033] [DEBUG] [main] [org.apache.ibatis.io.ResolverUtil] [Checking to see if class com.atguigu.mybatis.mapper.DynamicSQLMapper matches criteria [is assignable to Object]]
+[00:46:04.033] [DEBUG] [main] [org.apache.ibatis.io.ResolverUtil] [Checking to see if class com.atguigu.mybatis.mapper.EmpMapper matches criteria [is assignable to Object]]
+[00:46:04.064] [DEBUG] [main] [com.atguigu.mybatis.mapper.CacheMapper] [Cache Hit Ratio [com.atguigu.mybatis.mapper.CacheMapper]: 0.0]
+[00:46:04.065] [DEBUG] [main] [org.apache.ibatis.transaction.jdbc.JdbcTransaction] [Opening JDBC Connection]
+</system-out>
+  </testcase>
+</testsuite>
